@@ -15,4 +15,5 @@
 LOCAL_PATH := vendor/nxp/crespo4g
 
 # NXP blob necessary for Nexus S hardware
-$(call inherit-product, vendor/nxp/crespo/device-crespo.mk)
+PRODUCT_COPY_FILES := \
+    $(LOCAL_PATH)/proprietary/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so
